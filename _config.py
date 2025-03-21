@@ -1,0 +1,11 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ACS_CONNECTION_STRING = os.getenv("ACS_CONNECTION_STRING", None)
+ACS_PHONE_NUMBER = os.getenv("ACS_PHONE_NUMBER", None)
+TARGET_PHONE_NUMBER = os.getenv("TARGET_PHONE_NUMBER", None)
+CALLBACK_URI_HOST = os.getenv("CALLBACK_URI_HOST", None)
+COGNITIVE_SERVICES_ENDPOINT = os.getenv("COGNITIVE_SERVICES_ENDPOINT", None)
+TARGET_TEAMS_USER_ID = os.getenv("TARGET_TEAMS_USER_ID", None)
